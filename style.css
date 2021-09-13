@@ -1,0 +1,123 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body{
+	background-image: url(./images/pattern-background-mobile.svg);
+	background-repeat: no-repeat;
+	background-color: hsl(225, 100%, 94%);
+	font-family: 'Red Hat Display', sans-serif;
+}
+main{
+	width: 80%;
+	height: 550px;
+	margin: auto;
+	margin-top: 30px;
+	border-radius: 8px;
+	display: flex;
+	flex-direction: column;
+	background-color: white;
+}
+.topcontainer{
+	width: 100%;
+	height: 180px;
+	background-image: url(./images/illustration-hero.svg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	border-radius: 10px 10px 0 0;
+}
+h1{
+	display: block;
+	margin-top: 20px;
+	text-align: center;
+	color: hsl(223, 47%, 23%);
+	font-weight: 900;
+}
+.description{
+	display: block;
+	text-align: center;
+	width: 85%;
+	margin: auto;	
+	margin-top: 15px;
+	font-weight: 500;
+	font-size: 15px;
+	line-height: 1.4;
+	color: hsl(224, 23%, 55%);
+}
+.annualplan{
+	display: flex;
+	justify-content: space-around;
+	width: 85%;
+	margin: auto;
+	margin-top: 15px;
+	background-color: hsl(225, 100%, 98%);
+	border-radius: 8px;
+	padding: 10px;
+}
+.text{
+	margin-right: 10px;
+}
+.p1{
+	font-weight: 900;
+	color: hsl(223, 47%, 23%);
+	margin-top: 10px;
+	margin-right: 5px;
+}
+.p2{
+	color: hsl(224, 23%, 55%);
+}
+a{
+	margin-top: 15px;
+}
+.payment{
+	display: flex;
+	flex-direction: column;
+}
+.pay{
+	width: 85%;
+	height: 45px;
+	margin: auto;
+	margin-top: 25px;
+	border: none;
+	border-radius: 8px;
+	outline: none;
+	color: white;
+	background-color: hsl(245, 75%, 52%);
+	font-family: 'Red Hat Display', sans-serif;
+	font-weight: 700;
+	font-size: 15px;
+	box-shadow: 0 10px  15px hsl(224, 23%, 55%);
+}
+.cancel{
+	border: none;
+	outline: none;
+	font-size: 15px;
+	font-weight: 700;
+	color: hsl(223, 47%, 23%);
+	background-color: transparent;
+	height: 45px;
+	font-family: 'Red Hat Display', sans-serif;
+}
+.attribution {
+	font-size: 11px; 
+	text-align: center;
+	margin-top: 15px;
+}
+.attribution a {
+	color: hsl(228, 45%, 44%);
+	text-decoration: none;
+}
+a:hover, .pay:hover, .cancel:hover{
+	cursor: pointer;
+}
+
+@media screen and (min-width: 376px){
+	body{
+		background-image: url(./images/pattern-background-desktop.svg);
+		background-repeat: no-repeat;
+	}
+	main{
+		width: 28%;
+	}
+}
